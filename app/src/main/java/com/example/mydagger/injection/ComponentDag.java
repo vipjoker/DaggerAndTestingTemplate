@@ -1,4 +1,8 @@
-package com.example.mydagger;
+package com.example.mydagger.injection;
+
+import com.example.mydagger.view.MainActivity;
+import com.example.mydagger.ModuleApp;
+import com.example.mydagger.view.SecondActivity;
 
 import javax.inject.Singleton;
 
@@ -10,7 +14,7 @@ import dagger.Component;
 @Singleton
 @Component(modules = {ModuleApp.class})
 public interface ComponentDag{
-
+        void inject(SecondActivity activity);
 
         void inject(MainActivity activity);
         // void inject(MyFragment fragment);

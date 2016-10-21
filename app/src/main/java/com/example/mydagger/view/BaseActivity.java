@@ -1,4 +1,4 @@
-package com.example.mydagger;
+package com.example.mydagger.view;
 
 import android.support.v7.app.AppCompatActivity;
 
